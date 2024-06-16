@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iceshard",
+        "missing": "empty"
+      },
+      "name": "default"
+    }
+  }
+}

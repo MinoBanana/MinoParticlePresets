@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="particlepresets"
+version="1.0.0"
+displayName="ParticlePresets"
+displayURL="https://www.curseforge.com/members/minobanana/projects"
+credits="MinoBanana"
+authors="MinoBanana"
+description="Particle Shapes, Functions, and Additions"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.particlepresets]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.4.223,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.particlepresets]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+[[dependencies.particlepresets]]
+    modId="pehkui"
+    type="optional"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

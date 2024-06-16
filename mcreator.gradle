@@ -1,0 +1,11 @@
+repositories {
+    maven {
+    	url = "https://jitpack.io"
+    }
+}
+    
+dependencies {
+	implementation 'com.github.Virtuoel:Pehkui:3.8.0-1.20.4-neoforge'
+}
+
+

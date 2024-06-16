@@ -1,0 +1,2224 @@
+{
+  "mod_elements": [
+    {
+      "name": "Particlepreset",
+      "type": "command",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "particlepreset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ParticlepresetCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "PresetGenerator",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preset_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/PresetGeneratorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlameRing",
+      "type": "potioneffect",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameRingMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameRingActiveTickCondition",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_ring_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameRingActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameSpiral",
+      "type": "potioneffect",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameSpiralMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameCylinder",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_cylinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameCylinderMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameSphere",
+      "type": "potioneffect",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameSphereMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameExpansion",
+      "type": "potioneffect",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_expansion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameExpansionMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameSpiralActive",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_spiral_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameSpiralActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameCylinderActive",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_cylinder_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameCylinderActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameSphereActive",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_sphere_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameSphereActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "FlameExpansionActive",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_expansion_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameExpansionActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "DarkRing",
+      "type": "potioneffect",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkRingMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkSpiral",
+      "type": "potioneffect",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkSpiralMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkCylinder",
+      "type": "potioneffect",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cylinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkCylinderMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkSphere",
+      "type": "potioneffect",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkSphereMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkExpansion",
+      "type": "potioneffect",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_expansion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkExpansionMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkRingOnActive",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_ring_on_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkRingOnActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkSpiralOnActive",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_spiral_on_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkSpiralOnActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkCylinderOnActive",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_cylinder_on_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkCylinderOnActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkSphereOnActive",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_sphere_on_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkSphereOnActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "DarkExpansionOnActive",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_expansion_on_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkExpansionOnActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Darkness"
+    },
+    {
+      "name": "IceRing",
+      "type": "potioneffect",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceRingMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceSpiral",
+      "type": "potioneffect",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceSpiralMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceCylinder",
+      "type": "potioneffect",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_cylinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceCylinderMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceSphere",
+      "type": "potioneffect",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceSphereMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceExpansion",
+      "type": "potioneffect",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_expansion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceExpansionMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceRingActive",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_ring_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceRingActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceSpiralActive",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_spiral_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceSpiralActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceCylinderActive",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_cylinder_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceCylinderActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceSphereActive",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_sphere_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceSphereActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "IceExpansionActive",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_expansion_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceExpansionActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Ice"
+    },
+    {
+      "name": "LightRing",
+      "type": "potioneffect",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightRingMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightSpiral",
+      "type": "potioneffect",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_spiral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightSpiralMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightCylinder",
+      "type": "potioneffect",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_cylinder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightCylinderMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightSphere",
+      "type": "potioneffect",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sphere",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightSphereMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightExpansion",
+      "type": "potioneffect",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_expansion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightExpansionMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightRingActive",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_ring_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightRingActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightSpiralActive",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_spiral_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightSpiralActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightCylinderActive",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_cylinder_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightCylinderActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightSphereActive",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_sphere_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightSphereActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "LightExpansionActive",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_expansion_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightExpansionActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Light"
+    },
+    {
+      "name": "PresetGeneratorRelTimed",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preset_generator_rel_timed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/PresetGeneratorRelTimedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Particlepresetrel",
+      "type": "command",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "particlepresetrel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ParticlepresetrelCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ParitcleSetCoords",
+      "type": "command",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "paritcle_set_coords",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ParitcleSetCoordsCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "PresetGeneratorCoords",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "preset_generator_coords",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/PresetGeneratorCoordsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Summoningcircle",
+      "type": "livingentity",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoningcircle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/client/renderer/SummoningcircleRenderer.java",
+          "src/main/resources/assets/particlepresets/models/item/summoningcircle_spawn_egg.json",
+          "src/main/java/net/particleeffects/entity/SummoningcircleEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SummoningcircleOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoningcircle_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/SummoningcircleOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "T2KEffectExpires",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_2_k_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/T2KEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "T2K",
+      "type": "potioneffect",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "t_2_k",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/T2KMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "SummoningcircleOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoningcircle_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/SummoningcircleOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Ritualcirclesmall",
+      "type": "livingentity",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritualcirclesmall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/entity/RitualcirclesmallEntity.java",
+          "src/main/java/net/particleeffects/client/renderer/RitualcirclesmallRenderer.java",
+          "src/main/resources/assets/particlepresets/models/item/ritualcirclesmall_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Smallcirclespin",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smallcirclespin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/SmallcirclespinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LargeRitualCircle",
+      "type": "potioneffect",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_ritual_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LargeRitualCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Extras"
+    },
+    {
+      "name": "SmallRitualCircle",
+      "type": "potioneffect",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ritual_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/SmallRitualCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Extras"
+    },
+    {
+      "name": "LargeRitualCircleOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_ritual_circle_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LargeRitualCircleOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Extras"
+    },
+    {
+      "name": "SmallRitualCircleOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_ritual_circle_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/SmallRitualCircleOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Extras"
+    },
+    {
+      "name": "Particlecircle",
+      "type": "command",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "particlecircle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ParticlecircleCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CircleParticleGenerator",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "circle_particle_generator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/CircleParticleGeneratorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlameBeam",
+      "type": "potioneffect",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameBeamMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "IceBeam",
+      "type": "potioneffect",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceBeamMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "LightBeam",
+      "type": "potioneffect",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightBeamMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "DarkBeam",
+      "type": "potioneffect",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkBeamMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "FlameBeamOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_beam_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameBeamOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "IceBeamActive",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_beam_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceBeamActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "LightBeamActive",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_beam_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightBeamActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "DarkBeamActive",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_beam_active",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkBeamActiveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/Beams"
+    },
+    {
+      "name": "Timer",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/TimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/TestProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Shockwave",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shockwave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ShockwaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShockwaveAlt",
+      "type": "procedure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shockwave_alt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ShockwaveAltProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShockArea",
+      "type": "command",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_area",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ShockAreaCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Shockwaveex",
+      "type": "command",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shockwaveex",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/ShockwaveexCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Shake",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ShakeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ExtendedShockwave",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "extended_shockwave",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ExtendedShockwaveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShakeEffect",
+      "type": "potioneffect",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shake_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/ShakeEffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Quake",
+      "type": "command",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/QuakeCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ShockCord",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_cord",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ShockCordProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Quakecord",
+      "type": "command",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quakecord",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/QuakecordCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ShockCordFix",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shock_cord_fix",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ShockCordFixProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlameCircle",
+      "type": "potioneffect",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/FlameCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "IceCircle",
+      "type": "potioneffect",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/IceCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "DarkCircle",
+      "type": "potioneffect",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "LightCircle",
+      "type": "potioneffect",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LightCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "FlameCircleTick",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_circle_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/FlameCircleTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "IceCircleTick",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_circle_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/IceCircleTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "DarkCircleTick",
+      "type": "procedure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_circle_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkCircleTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "LightCircleTick",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_circle_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LightCircleTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "RotatingTrails",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rotating_trails",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/RotatingTrailsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rtrail",
+      "type": "command",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rtrail",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/command/RtrailCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "AngledFlameCircle",
+      "type": "potioneffect",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angled_flame_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/AngledFlameCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "AngledIceCircle",
+      "type": "potioneffect",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angled_ice_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/AngledIceCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "AngledDarkCircle",
+      "type": "potioneffect",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angled_dark_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/AngledDarkCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "AngledLightCircle",
+      "type": "potioneffect",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "angled_light_circle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/AngledLightCircleMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "AFTick",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "af_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/AFTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "AITick",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ai_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/AITickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "ADTick",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ad_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ADTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "ALTick",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "al_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ALTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/RotatingTrails"
+    },
+    {
+      "name": "Vignette",
+      "type": "overlay",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vignette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/client/screens/VignetteOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "DarkVignette",
+      "type": "potioneffect",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_vignette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/DarkVignetteMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "DarkEffect",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_effect",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/particleeffects/procedures/DarkEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "LowHealth",
+      "type": "potioneffect",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_health",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/LowHealthMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "LowHealthEffect",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_health_effect",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/particleeffects/procedures/LowHealthEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "LowHealthVignette",
+      "type": "overlay",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_health_vignette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/client/screens/LowHealthVignetteOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "RedVignette",
+      "type": "potioneffect",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_vignette",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/potion/RedVignetteMobEffect.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "RedVignetteEffect",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_vignette_effect",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/particleeffects/procedures/RedVignetteEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ParitcleEffects/HUDEffects"
+    },
+    {
+      "name": "RedVignetteGUI",
+      "type": "overlay",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_vignette_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/client/screens/RedVignetteGUIOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "Explosion",
+      "type": "particle",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/particlepresets/particles/explosion.json",
+          "src/main/java/net/particleeffects/client/particle/ExplosionParticle.java"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "ElectricSword",
+      "type": "tool",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "electric_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/item/ElectricSwordItem.java",
+          "src/main/resources/assets/particlepresets/models/item/electric_sword.json"
+        ]
+      },
+      "path": "~/ParitcleEffects/Fire"
+    },
+    {
+      "name": "Reducecooldown",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reducecooldown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/particleeffects/procedures/ReducecooldownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "timer",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "start_timer",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "quake",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "spell_cooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "100.0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "language_map": {
+    "en_us": {
+      "effect.particlepresets.flame_spiral": "FlameSpiral",
+      "effect.particlepresets.dark_spiral": "DarkSpiral",
+      "effect.particlepresets.ice_sphere": "IceSphere",
+      "effect.particlepresets.light_cylinder": "LightCylinder",
+      "effect.particleeffects.flame_ring": "FlameRing",
+      "effect.particleeffects.flame_spiral": "FlameSpiral",
+      "effect.particlepresets.light_expansion": "LightExpansion",
+      "effect.particleeffects.dark_expansion": "DarkSphere",
+      "effect.particleeffects.flame_beam": "FlameBeam",
+      "entity.particleeffects.summoningcircle": "large_circle",
+      "effect.particlepresets.dark_circle": "DarkCircle",
+      "effect.particlepresets.angled_light_circle": "AngledLightCircle",
+      "effect.particleeffects.light_cylinder": "LightCylinder",
+      "effect.particlepresets.shake_effect": "Shake",
+      "effect.particleeffects.dark_cylinder": "DarkCylinder",
+      "effect.particleeffects.flame_expansion": "FlameSpiral",
+      "effect.particlepresets.flame_circle": "FlameCircle",
+      "effect.particleeffects.dark_beam": "DarkBeam",
+      "effect.particlepresets.light_sphere": "LightSphere",
+      "effect.particleeffects.small_ritual_circle": "SRC",
+      "item.particlepresets.summoningcircle_spawn_egg": "large_circle Spawn Egg",
+      "effect.particlepresets.angled_dark_circle": "AngledDarkCircle",
+      "entity.particlepresets.summoningcircle": "large_circle",
+      "effect.particlepresets.dark_sphere": "DarkSphere",
+      "effect.particlepresets.red_vignette": "Red Vignette",
+      "effect.particlepresets.small_ritual_circle": "SRC",
+      "effect.particleeffects.flame_sphere": "FlameSpiral",
+      "item.particlepresets.ritualcirclesmall_spawn_egg": "small_circle Spawn Egg",
+      "effect.particlepresets.light_beam": "LightBeam",
+      "effect.particlepresets.low_health": "Red Vignette",
+      "effect.particleeffects.ice_sphere": "IceSphere",
+      "effect.particleeffects.dark_sphere": "DarkSphere",
+      "effect.particlepresets.dark_expansion": "DarkSphere",
+      "effect.particlepresets.light_ring": "LightRing",
+      "effect.particlepresets.flame_sphere": "FlameSpiral",
+      "effect.particleeffects.dark_ring": "DarkRing",
+      "effect.particlepresets.flame_expansion": "FlameSpiral",
+      "effect.particlepresets.angled_flame_circle": "AngledFlameCircle",
+      "effect.particleeffects.ice_expansion": "IceSphere",
+      "effect.particlepresets.ice_cylinder": "IceCylinder",
+      "effect.particlepresets.light_spiral": "LightSpiral",
+      "effect.particlepresets.ice_beam": "IceBeam",
+      "effect.particleeffects.dark_spiral": "DarkSpiral",
+      "effect.particleeffects.light_beam": "LightBeam",
+      "effect.particlepresets.light_circle": "LightCircle",
+      "effect.particlepresets.ice_ring": "IceRing",
+      "effect.particleeffects.ice_spiral": "IceSpiral",
+      "effect.particlepresets.ice_circle": "IceCircle",
+      "effect.particlepresets.dark_cylinder": "DarkCylinder",
+      "effect.particleeffects.light_spiral": "LightSpiral",
+      "effect.particleeffects.ice_cylinder": "IceCylinder",
+      "item.particlepresets.electric_sword": "Electric Sword",
+      "effect.particleeffects.light_ring": "LightRing",
+      "effect.particlepresets.ice_spiral": "IceSpiral",
+      "entity.particlepresets.ritualcirclesmall": "small_circle",
+      "effect.particleeffects.ice_ring": "IceRing",
+      "effect.particlepresets.angled_ice_circle": "AngledIceCircle",
+      "entity.particleeffects.ritualcirclesmall": "small_circle",
+      "effect.particleeffects.flame_cylinder": "FlameSpiral",
+      "effect.particlepresets.dark_ring": "DarkRing",
+      "effect.particlepresets.large_ritual_circle": "LRC",
+      "effect.particleeffects.t_2_k": "T2K",
+      "effect.particlepresets.flame_cylinder": "FlameSpiral",
+      "effect.particleeffects.large_ritual_circle": "LRC",
+      "effect.particlepresets.dark_beam": "DarkBeam",
+      "item.particleeffects.summoningcircle_spawn_egg": "large_circle Spawn Egg",
+      "effect.particlepresets.flame_ring": "FlameRing",
+      "effect.particlepresets.dark_vignette": "Dark Vignette",
+      "effect.particleeffects.light_expansion": "LightExpansion",
+      "effect.particlepresets.ice_expansion": "IceSphere",
+      "effect.particlepresets.t_2_k": "T2K",
+      "effect.particleeffects.light_sphere": "LightSphere",
+      "item.particleeffects.ritualcirclesmall_spawn_egg": "small_circle Spawn Egg",
+      "effect.particleeffects.ice_beam": "IceBeam",
+      "effect.particlepresets.flame_beam": "FlameBeam"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "ParitcleEffects",
+        "children": [
+          {
+            "name": "Fire",
+            "children": []
+          },
+          {
+            "name": "Darkness",
+            "children": []
+          },
+          {
+            "name": "Ice",
+            "children": []
+          },
+          {
+            "name": "Light",
+            "children": []
+          },
+          {
+            "name": "Extras",
+            "children": []
+          },
+          {
+            "name": "Beams",
+            "children": []
+          },
+          {
+            "name": "RotatingTrails",
+            "children": []
+          },
+          {
+            "name": "HUDEffects",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Explosions",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "particlepresets",
+    "modName": "ParticlePresets",
+    "version": "1.0.0",
+    "description": "Particle Shapes, Functions, and Additions",
+    "author": "MinoBanana",
+    "websiteURL": "https://www.curseforge.com/members/minobanana/projects",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "pehkui"
+    ],
+    "currentGenerator": "neoforge-1.20.4",
+    "credits": "MinoBanana",
+    "modElementsPackage": "net.particleeffects"
+  },
+  "mcreatorVersion": 202400118518
+}

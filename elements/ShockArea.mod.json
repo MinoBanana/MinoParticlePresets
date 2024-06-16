@@ -1,0 +1,10 @@
+{
+  "_fv": 60,
+  "_type": "command",
+  "definition": {
+    "commandName": "shockarea",
+    "type": "STANDARD",
+    "permissionLevel": "4",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"string\" x=\"358\" y=\"18\"><field name=\"type\">word</field><field name=\"name\">x_translate</field></block><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"number_default\"><field name=\"name\">x_translate</field><statement name=\"args\"><block type=\"number_default\"><field name=\"name\">z_translate</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">ShockwaveAlt</field></block></statement></block></statement></block></next></block><block type=\"string\" x=\"697\" y=\"93\"><field name=\"type\">word</field><field name=\"name\">z_translate</field></block></xml>"
+  }
+}
